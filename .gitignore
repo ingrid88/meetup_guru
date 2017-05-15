@@ -13,3 +13,5 @@ slackbot_test_settings.py
 /dist
 /*.egg-info
 .cache
+environment_variables.sh
+slackbot_settings.py
