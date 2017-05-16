@@ -12,6 +12,7 @@ from slackbot.manager import PluginsManager
 from slackbot.slackclient import SlackClient
 from slackbot.dispatcher import MessageDispatcher
 
+
 logger = logging.getLogger(__name__)
 
 
