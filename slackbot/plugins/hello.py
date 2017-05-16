@@ -15,7 +15,7 @@ import sys
 
 def findout(topic, location):
 
-    api_key = "27231503824b247871211a2178305f"
+    api_key = "****"
     if location == 'NY':
         lon = -74.0059
         lat = 40.7128
