@@ -110,52 +110,7 @@ def hello_webapi(message):
     }])
 
 
-@respond_to('^reply_webapi_not_as_user$')
-def hello_webapi_not_as_user(message):
-    message.reply_webapi('hi!', as_user=False)
-
-
-@respond_to('hello_formatting')
-def hello_reply_formatting(message):
-    # Format message with italic style
-    message.reply('_hello_ sender!')
-
-
-@listen_to('hello$')
-def hello_send(message):
-    message.send('hello channel!')
-
-
-@listen_to('hello_decorators')
-@respond_to('hello_decorators')
-def hello_decorators(message):
-    # print(message)
-    # main()
-    message.send('hello!')
-    message.send(main())
-    message.send('hello!')
-
-
 @listen_to('meetup')
 @respond_to('meetup')
 def hello_decorators(message):
     message.send('hello!')
-
-
-@listen_to('hey!')
-@respond_to('hey!')
-def hey(message):
-    # message.reply(message)
-    message.react('eggplant')
-
-
-# @respond_to('potato')
-# def redwejf(message):
-#     # message.reply(message)
-#     message.send('you said my name and potato')
-#
-#
-# @listen_to('potdato')
-# def redjf(message):
-#     # message.reply(message)
-#     message.send('listen potato')
